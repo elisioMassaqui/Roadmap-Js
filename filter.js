@@ -6,7 +6,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
     return response.json();
 })
 .then(users => {
-    const filterdUsers = users.filter(users => users.name.includes('Leanne'))
+    const filterdUsers = users.filter(users => users.name.includes('Clementine'))
     console.log(filterdUsers)
+    const name = users.name
+    console.log(name);
 })
 .catch(error => console.error(error));
